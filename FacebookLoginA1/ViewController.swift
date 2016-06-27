@@ -9,7 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
-
+import FBSDKShareKit
 
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
 
@@ -34,6 +34,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
         if error == nil {
             getUserData()
+            //postTimeline()
             print("Login Complete.")
             self.performSegueWithIdentifier("showNew", sender: self)
             
@@ -61,6 +62,20 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             }
         }
     }
+    
+    func postTimeline() {
+        let content:FBSDKShareLinkContent = FBSDKShareLinkContent()
+        content.contentURL = NSURL(string: "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p200x200/11007728_931593790194205_447890577362865019_n.jpg?oh=8f267d80b182b55d04b56277ae95d30c&oe=580C29F3&__gda__=1475053929_2306230052f4a32c6dd3faace9e1216d")
+        content.contentTitle = "Content Title"
+        content.contentDescription = "Content Description"
+        content.imageURL = NSURL(string: "https://developers.facebook.com/docs/ios/graph")
+        print("POST")
+        let button:FBSDKShareButton = FBSDKShareButton()
+        button.shareContent = content
+        button.center = self.view.center
+        self.view.addSubview(button)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

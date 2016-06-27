@@ -15,6 +15,7 @@
 		84668BDC1D20F580005F9DCA /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84668BDB1D20F580005F9DCA /* FBSDKCoreKit.framework */; };
 		84668BE01D20F840005F9DCA /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84668BDF1D20F840005F9DCA /* FBSDKLoginKit.framework */; };
 		84668BE21D20FD58005F9DCA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84668BE11D20FD58005F9DCA /* DetailViewController.swift */; };
+		84668BE61D212691005F9DCA /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84668BE51D212691005F9DCA /* FBSDKShareKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		84668BDB1D20F580005F9DCA /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		84668BDF1D20F840005F9DCA /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		84668BE11D20FD58005F9DCA /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		84668BE51D212691005F9DCA /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			files = (
 				84668BE01D20F840005F9DCA /* FBSDKLoginKit.framework in Frameworks */,
 				84668BDC1D20F580005F9DCA /* FBSDKCoreKit.framework in Frameworks */,
+				84668BE61D212691005F9DCA /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +49,7 @@
 		84668BBD1D20F439005F9DCA = {
 			isa = PBXGroup;
 			children = (
+				84668BE51D212691005F9DCA /* FBSDKShareKit.framework */,
 				84668BDF1D20F840005F9DCA /* FBSDKLoginKit.framework */,
 				84668BDB1D20F580005F9DCA /* FBSDKCoreKit.framework */,
 				84668BC81D20F43A005F9DCA /* FacebookLoginA1 */,
